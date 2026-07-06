@@ -1,0 +1,12 @@
+{
+    "input_folder": "data",
+    "output_folder": "output",
+    "output_file": "merged_result.xlsx",
+    "duplicate_subset": [],
+    "date_columns": [
+        "订单日期",
+        "日期",
+        "下单时间"
+    ],
+    "drop_empty_rows": true
+}
