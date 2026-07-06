@@ -1,59 +1,98 @@
-# Excel Automation Platform
+# 📊 Excel Automation Platform
 
-Enterprise Excel Data Processing Tool Based on Python.
+> Enterprise Excel Data Processing Tool Based on Python
 
-## 项目介绍
+一个基于 Python 开发的 Excel 自动化处理工具，支持批量读取 Excel、数据清洗、去重、统计分析、结果导出及 GUI 图形界面，模拟企业运营数据处理场景。
 
-企业每天会产生大量 Excel 数据，例如订单、库存、销售、客户、采购等报表。人工处理通常需要反复进行合并、去重、格式统一和统计分析，效率低且容易出错。
+---
 
-本项目通过 Python 实现 Excel 数据自动处理，支持批量读取、数据清洗、去重、日期格式统一、统计分析、结果导出和 GUI 图形界面操作，适用于运营、财务、采购、销售、仓库等业务场景。
+# ✨ Project Features
 
-## 功能
+- ✅ Batch import multiple Excel files
+- ✅ Automatically merge Excel data
+- ✅ Remove duplicate records
+- ✅ Remove empty rows
+- ✅ Standardize date format
+- ✅ Sales statistics by store
+- ✅ Sales statistics by product
+- ✅ Export processed Excel reports
+- ✅ Generate running logs
+- ✅ Desktop GUI application
 
-- 批量读取多个 Excel 文件
-- 自动合并数据
-- 删除空行
-- 删除重复数据
-- 统一日期格式
-- 按店铺、商品生成统计结果
-- 导出处理后的 Excel 文件
-- 生成运行日志
-- GUI 图形界面选择输入/输出目录
+---
 
-## 技术栈
+# 📷 Software Preview
 
-- Python 3
-- pandas
-- openpyxl
-- tkinter
-- logging
-- pathlib
+## GUI Interface
 
-## 使用方式
+![GUI](docs/gui.png)
 
-### 命令行运行
+---
 
-```bash
-pip install -r requirements.txt
-python main.py
+## Cleaned Data
+
+![CleanedData](docs/result.png)
+
+---
+
+## Store Statistics
+
+![StoreStatistics](docs/sheet1.png)
+
+---
+
+## Product Statistics
+
+![ProductStatistics](docs/sheet2.png)
+
+---
+
+# 🏗 Workflow
+
+```text
+Excel Files
+     │
+     ▼
+Batch Read
+     │
+     ▼
+Merge Data
+     │
+     ▼
+Data Cleaning
+ ┌────┼──────────────┐
+ │    │              │
+ ▼    ▼              ▼
+Empty Duplicate   Date Format
+     │
+     ▼
+Statistics Analysis
+     │
+     ▼
+Export Excel
+     │
+     ▼
+Generate Log
 ```
 
-### 图形界面运行
+---
 
-```bash
-python gui.py
-```
-
-## 项目结构
+# 📂 Project Structure
 
 ```text
 excel-automation-platform/
-├── data/
-├── output/
-├── logs/
+│
 ├── config/
 │   └── config.json
-├── screenshots/
+│
+├── data/
+│
+├── docs/
+│   ├── gui.png
+│   ├── result.png
+│   ├── sheet1.png
+│   └── sheet2.png
+│
 ├── src/
 │   ├── reader.py
 │   ├── cleaner.py
@@ -61,15 +100,130 @@ excel-automation-platform/
 │   ├── logger.py
 │   ├── processor.py
 │   └── statistics.py
-├── main.py
+│
 ├── gui.py
+├── main.py
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
-## 后续规划
+---
 
-- 增加异常数据导出
-- 增加更灵活的配置项
-- 增加图表日报
-- 打包为 Windows EXE
+# 🛠 Technology Stack
+
+| Technology | Description |
+|------------|-------------|
+| Python | Core Language |
+| Pandas | Excel Data Processing |
+| OpenPyXL | Excel Read & Write |
+| Tkinter | Desktop GUI |
+| Logging | Runtime Log |
+| Pathlib | File Management |
+
+---
+
+# 🚀 Quick Start
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Run GUI
+
+```bash
+python gui.py
+```
+
+---
+
+## Run Console Version
+
+```bash
+python main.py
+```
+
+---
+
+# 💼 Business Scenario
+
+This project simulates common enterprise office scenarios where multiple Excel reports need to be processed every day.
+
+Applicable departments:
+
+- Operations
+- Sales
+- Purchasing
+- Warehouse
+- Finance
+
+Typical workflow:
+
+1. Batch import multiple Excel files
+2. Merge all reports
+3. Clean duplicate data
+4. Standardize date formats
+5. Generate statistical reports
+6. Export final Excel file
+
+---
+
+# ⭐ Project Highlights
+
+- Modular architecture
+- Desktop GUI
+- Enterprise-oriented business scenario
+- Batch Excel processing
+- Automatic data cleaning
+- Statistics report generation
+- Logging support
+- Easy to extend
+
+---
+
+# 📅 Version History
+
+## v1.0
+
+- Batch Excel Import
+- Merge Multiple Files
+- Remove Duplicate Records
+- Remove Empty Rows
+- Date Format Standardization
+- Store Statistics
+- Product Statistics
+- GUI Interface
+- Logging System
+
+---
+
+# 🔮 Roadmap
+
+Planned features:
+
+- Database Support
+- REST API Integration
+- Scheduled Tasks
+- Email Reports
+- Data Visualization Dashboard
+- Multi-language Support
+
+---
+
+# 👨‍💻 Author
+
+**Joy Wang**
+
+RPA Developer | Python Automation Developer
+
+GitHub：
+
+https://github.com/wjoy00337-debug
+
+---
+
+⭐ If you find this project useful, feel free to Star this repository.
